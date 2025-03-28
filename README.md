@@ -96,3 +96,40 @@ This project is licensed under the MIT License.
 
 The PLOT_frames_pixy.py script visualizes vector data detected by the Pixy2 camera using OpenCV. It initializes the Pixy2 camera in line tracking mode to detect vectors and creates a display window to show these vectors in real-time. The script scales the coordinates from the Pixy2 camera's resolution to the display window's resolution and draws the vectors as lines with start and end points on the window. The visualization continues until the user presses the 'q' key to exit.
 This README file provides an overview of the script, installation instructions, usage details, and additional information about the data collection process.
+
+## keyboard.py
+
+The `keyboard.py` script is a keyboard-based controller for the NXP Cup robot. It utilizes the Pygame library to create a graphical user interface (GUI) that allows users to control the robot's movement using keyboard inputs. The script features a display window with control buttons for moving the robot forward, backward, left, right, and stopping it. The script continuously checks for keyboard inputs and updates the robot's throttle and steering values accordingly.
+
+### Key Features
+
+- **Graphical User Interface (GUI)**: A Pygame window is created with buttons representing the control commands.
+- **Keyboard Controls**:
+  - **Arrow Keys**: Control the robot's movement.
+    - UP arrow: Move forward
+    - DOWN arrow: Move backward
+    - LEFT arrow: Turn left
+    - RIGHT arrow: Turn right
+  - **Space Bar**: Stop the robot.
+  - **ESC Key**: Exit the controller.
+- **Real-time Display**: The GUI shows the current throttle and steering values.
+- **Control State**: The script maintains and updates the control state, including throttle, steering, and active buttons.
+- **Event Handling**: The script handles keyboard events and updates the display accordingly.
+
+### Initialization
+
+The `DriveBotController` class initializes the Pygame environment, sets up the display window, defines colors and fonts, and initializes control states and button rectangles.
+
+### Main Loop
+
+The `run_controller` method contains the main loop, which continuously checks for keyboard inputs, updates the control states, and redraws the display. The loop runs at approximately 30 frames per second.
+
+### Methods
+
+- **draw_display**: Draws the control buttons and status information on the display window.
+- **get_controls**: Handles keyboard inputs and updates the throttle and steering values based on the pressed keys.
+
+### Usage
+
+To run the script, simply execute the `keyboard.py` file. The script will initialize the controller and open the Pygame window, ready to accept keyboard inputs for controlling the robot.
+![Capture d’écran du 2025-03-28 23-43-34](https://github.com/user-attachments/assets/4fe76bfa-6df1-4000-bbaa-e0502d96007f)
