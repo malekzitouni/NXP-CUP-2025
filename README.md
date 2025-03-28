@@ -1,10 +1,11 @@
 # NXP-CUP-2025
 Here is a README file for the `StoreVectorsSteering.py` script based on the provided script and repository information:
 
-```markdown
 # StoreVectorsSteering
 
 This repository contains a Python script `StoreVectorsSteering.py` for data collection using the Pixy2 camera and Pygame for a graphical user interface. The script is designed for the NXP Cup competition, where it collects and stores vector data detected by the Pixy2 camera.
+![Capture d’écran du 2025-03-28 23-47-53](https://github.com/user-attachments/assets/5534eefc-fde5-4dd8-aea9-530c1f8e5504)
+
 
 ## Prerequisites
 
