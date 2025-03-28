@@ -96,6 +96,8 @@ This project is licensed under the MIT License.
 
 The PLOT_frames_pixy.py script visualizes vector data detected by the Pixy2 camera using OpenCV. It initializes the Pixy2 camera in line tracking mode to detect vectors and creates a display window to show these vectors in real-time. The script scales the coordinates from the Pixy2 camera's resolution to the display window's resolution and draws the vectors as lines with start and end points on the window. The visualization continues until the user presses the 'q' key to exit.
 This README file provides an overview of the script, installation instructions, usage details, and additional information about the data collection process.
+![image](https://github.com/user-attachments/assets/10fda4a4-90a8-4af2-a350-31a2bfd6fe8d)
+
 
 ## keyboard.py
 
